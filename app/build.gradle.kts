@@ -2,6 +2,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    kotlin("plugin.serialization") version "1.9.20"
 }
 
 android {
@@ -69,6 +70,7 @@ dependencies {
     implementation(libs.ktor.core)
     implementation(libs.ktor.client.android)
     implementation(libs.ktor.serialization.json)
+    implementation(libs.kotlin.serialization.json)
     implementation(libs.ktor.logging)
     implementation(libs.ktor.content.negotiation)
     implementation(libs.ktor.client.okhttp)
